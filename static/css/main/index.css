@@ -358,7 +358,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     border: rgb(145, 135, 222) solid 3.5px;
-    border-radius: 10px;
+    border-radius: 13.5px;
 }
 
 #prjtboximg img {
