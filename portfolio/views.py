@@ -1,7 +1,11 @@
 from django.shortcuts import render,redirect
 
+from projectpg.models import projects
+
 def home(request):
-    return render(request,'home.html')
+    context=projects.objects.all()
+    context={'projects':context}
+    return render(request,'home.html',context)
 
 def hipage(request):
     return render(request,'hi.html')

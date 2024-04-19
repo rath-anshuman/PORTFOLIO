@@ -61,18 +61,18 @@
     <div id="prjtabout">
       <div id="prjtaboutspan">
         <p><i class="fa-solid fa-diagram-project"></i> Projects</p>
-        <span>"Develop full-stack & mobile-friendly projects. I build web apps (Django/REST API) for seamless user experiences, develop robust mobile backends, and design user-friendly desktop interfaces (Tkinter)."
-        </span>
+        <span>"Develop full-stack & mobile-friendly projects. I build web apps (Django/REST API) for seamless user experiences, develop robust mobile backends, and design user-friendly desktop interfaces (Tkinter)."</span>
       </div>
     </div>
     <div id="prjtboxcontainer">
 
-
+      {% comment %} {% if context %} {% endcomment %}
+      {% for project in projects %}
       <div id="projectboxes">
         <div id="projectbox">
           <div id="projectboxholder">
             <div id="prjtboxhead">
-              <p>Student Ranking Systemaaaaa</p>
+              <p>{{project.heading}}</p>
               <div>
                 <!-- <button class="livebtn"><i class="animation"></i><a href="">Live View</a><i class="animation"></i> -->
                 </button>
@@ -80,27 +80,21 @@
             </div>
 
             <div id="prjtboximg">
-              <img src="/data/projects/studentrankingsytem.png" alt="">
+              <img src="media/{{project.img}}" alt="">
             </div>
             <div id="prjtboxdescription">
               <span>Description :</span>
-              <p>Excel's your one-stop shop for student rankings! Upload your class data and identify top performers (3, 10, or overall) based on CGPA. Analyze student performance with ease!</p>
+              <p>{{project.description}}</p>
             </div>
             <div id="prjtcode">
-              <a href="https://github.com/Sanskari-Coders/Student-Ranking-System"><i class="fa-brands fa-square-github"></i></a>
+              <a href="{{project.githublink}}"><i class="fa-brands fa-square-github"></i></a>
               <button class="cssbuttons-io-button">
                 more
                 <div class="icon">
-                  <a href="/html/projects.html"><svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                  >
+                  <a href="/html/projects.html"><svg height="24" width="24" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                      fill="currentColor"
-                    ></path>
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"></path>
                   </svg></a>
                 </div>
               </button>
@@ -108,8 +102,9 @@
           </div>
         </div>
       </div>
-
-
+      {% endfor %}
+      {% comment %} {% endif %} {% endcomment %}
+{% comment %} 
       <div id="projectboxes">
         <div id="projectbox">
           <div id="projectboxholder">
@@ -271,8 +266,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>{% endcomment %}
+    </div> 
 
     <!-- <div id="prjtmore">
       <button class="cssbuttons-io-button">
