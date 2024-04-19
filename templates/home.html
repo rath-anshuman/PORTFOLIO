@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshuman Rath | Portfolio </title>
+  <link rel="stylesheet" href="{% static "css/main/index.css" %}">
+  <link rel="stylesheet" href="{% static "css/main/media900.css" %}">
+  <link rel="stylesheet" href="{% static "css/main/media750.css" %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="nav">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Projects</a></li>
+        <li><a href="#section3">Skills</a></li>
+        <li><a href="#section4">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div class="section" id="section1"></div>
+
+
+
+  <section class="intro">
+    <div id="introhead">
+      <span>Web Developer | Backend Developer | Python Developer </span>
+    </div>
+
+    <div id="introsubhead">
+      <span>I architect elegant solutions and code with passion, transforming complex problems into beautifully simple
+        applications.</span>
+    </div>
+
+    <div id="introimg">
+      <img src=" {% static "data/intro/mf-avatar.svg" %}" alt="Anshuman">
+      <p>Anshuman Rath</p>
+    </div>
+    <div id="introbtn">
+      <a href="{% url "sayhi" %}">Say Hi</a>
+    </div>
+  </section>
+
+
+
+  <div class="section" id="section2"></div>
+
+
+
+  <section class="projects">
+    <div id="prjtabout">
+      <div id="prjtaboutspan">
+        <p><i class="fa-solid fa-diagram-project"></i> Projects</p>
+        <span>"Develop full-stack & mobile-friendly projects. I build web apps (Django/REST API) for seamless user experiences, develop robust mobile backends, and design user-friendly desktop interfaces (Tkinter)."
+        </span>
+      </div>
+    </div>
+    <div id="prjtboxcontainer">
+
+
+      <div id="projectboxes">
+        <div id="projectbox">
+          <div id="projectboxholder">
+            <div id="prjtboxhead">
+              <p>Student Ranking Systemaaaaa</p>
+              <div>
+                <!-- <button class="livebtn"><i class="animation"></i><a href="">Live View</a><i class="animation"></i> -->
+                </button>
+              </div>
+            </div>
+
+            <div id="prjtboximg">
+              <img src="/data/projects/studentrankingsytem.png" alt="">
+            </div>
+            <div id="prjtboxdescription">
+              <span>Description :</span>
+              <p>Excel's your one-stop shop for student rankings! Upload your class data and identify top performers (3, 10, or overall) based on CGPA. Analyze student performance with ease!</p>
+            </div>
+            <div id="prjtcode">
+              <a href="https://github.com/Sanskari-Coders/Student-Ranking-System"><i class="fa-brands fa-square-github"></i></a>
+              <button class="cssbuttons-io-button">
+                more
+                <div class="icon">
+                  <a href="/html/projects.html"><svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="projectboxes">
+        <div id="projectbox">
+          <div id="projectboxholder">
+            <div id="prjtboxhead">
+              <p>U.N.V.O.</p>
+              <div>
+                <!-- <button class="livebtn"><i class="animation"></i><a href="">Live View</a><i class="animation"></i> -->
+                </button>
+              </div>
+            </div>
+
+            <div id="prjtboximg">
+              <img src="/data/projects/unvo.png" alt="">
+            </div>
+            <div id="prjtboxdescription">
+              <span>Description :</span>
+              <p>U.N.V.O. a platform for anonymous conversations. Dive into discussions without revealing yourself, explore perspectives freely, and connect with anyone, anywhere.</p>
+            </div>
+            <div id="prjtcode">
+              <a href="https://github.com/Sanskari-Coders/U.N.V.O."><i class="fa-brands fa-square-github"></i></a>
+              <button class="cssbuttons-io-button">
+                more
+                <div class="icon">
+                  <a href="/html/projects.html"><svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectboxes">
+        <div id="projectbox">
+          <div id="projectboxholder">
+            <div id="prjtboxhead">
+              <p>Study Sync</p>
+              <div>
+                <!-- <button class="livebtn"><i class="animation"></i><a href="">Live View</a><i class="animation"></i> -->
+                </button>
+              </div>
+            </div>
+
+            <div id="prjtboximg">
+              <img src="/data/projects/StudySync.png" alt="">
+            </div>
+            <div id="prjtboxdescription">
+              <span>Description :</span>
+              <p>StudySync: College on phone! (Web based Android) Students & teachers stay connected. Schedules, notes, tasks & announcements. Easy college life & Studies sync togeather! </p>
+            </div>
+            <div id="prjtcode">
+              <a href="https://github.com/rath-anshuman/StudySync"><i class="fa-brands fa-square-github"></i></a>
+              <button class="cssbuttons-io-button">
+                more
+                <div class="icon">
+                  <a href="/html/projects.html"><svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectboxes">
+        <div id="projectbox">
+          <div id="projectboxholder">
+            <div id="prjtboxhead">
+              <p>Face Metrics</p>
+              <div>
+                <!-- <button class="livebtn"><i class="animation"><a href=""></i>Live View</a><i class="animation"></i> -->
+                </button>
+              </div>
+            </div>
+
+            <div id="prjtboximg">
+              <img src="/data/projects/facemetrics.png" alt="">
+            </div>
+            <div id="prjtboxdescription">
+              <span>Description :</span>
+              <p>Face Metrics: An desktop app uses OpenCV for real-time employee face tracking. Attendance logs to Excel, prevents duplicates, for efficient work attendance management.</p>
+            </div>
+            <div id="prjtcode">
+              <a href="https://github.com/rath-anshuman/Face-Metrics"><i class="fa-brands fa-square-github"></i></a>
+              <button class="cssbuttons-io-button">
+                more
+                <div class="icon">
+                  <a href="/html/projects.html"><svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projectboxes">
+        <div id="projectbox">
+          <div id="projectboxholder">
+            <div id="prjtboxhead">
+              <p>Centurion(blgr) Website</p>
+              <div>
+                <!-- <button class="livebtn"><i class="animation"></i><a href="">Live View</a><i class="animation"></i> -->
+                </button>
+              </div>
+            </div>
+
+            <div id="prjtboximg">
+              <img src="/data/projects/cutm.png" alt="">
+            </div>
+            <div id="prjtboxdescription">
+              <span>Description :</span>
+              <p>Discover college's comprehensive programs, esteemed faculty, and vibrant facilities. User-friendly site offers admissions info, academic calendars, and student support resources.</p>
+            </div>
+            <div id="prjtcode">
+              <a href="https://github.com/rath-anshuman/CUTMBOL-Website"><i class="fa-brands fa-square-github"></i></a>
+              <button class="cssbuttons-io-button">
+                more
+                <div class="icon">
+                  <a href="/html/projects.html"><svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="prjtmore">
+      <button class="cssbuttons-io-button">
+        more
+        <div class="icon">
+          <a href="/html/projects.html"><svg
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"
+            ></path>
+          </svg></a>
+        </div>
+      </button>
+    </div> -->
+  </section>
+
+
+
+
+  <div class="section" id="section3"></div>
+
+
+
+
+
+  <section class="skills">
+    <div id="skillsabout">
+      <div id="skillabouttittle">
+        <p><i class="fa-solid fa-laptop-code"></i> My Skills</p>
+      </div>
+      <div id="skillaboutdescription">
+        <span>"I craft projects using a blend of HTML, CSS, JavaScript, and Python, integrating Django and Django REST
+          Framework for robust web applications, and employing Tkinter for seamless desktop interfaces."
+        </span>
+      </div>
+    </div>
+
+    <div id="skillspannel">
+      <div id="skillboxcontainer">
+
+        <div id="skillboxesa">
+
+          <div id="skillbox1">
+            <div id="skilldetaila">
+              <i class="fa-brands fa-python"></i>
+              <span>Python Development</span>
+            </div>
+            <div class="skillimagea">
+              <img src="{% static "data/skills/python.gif" %}" alt="">
+            </div>
+          </div>
+
+          <div id="skillbox2">
+            <div id="skilldetailb">
+              <i class="fa-brands fa-chrome"></i>
+              <span>Web Development </span>
+              <p>"Backend Databases Framework Api Frontend"</p>
+            </div>
+            <div class="skillimageb">
+              <img src="{% static "data/skills/web dev.gif" %}" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div id="skillboxesb">
+          <div id="skillbox4">
+
+            <div id="skilldetailb">
+              <i class="fa-solid fa-desktop"></i>
+              <span>Desktop App Development</span>
+              <p>"Python Tkinter Based GUI Interactice Apps"</p>
+            </div>
+            <div class="skillimageb">
+              <img src=" {% static "data/skills/desktop.gif" %}" alt="">
+            </div>
+          </div>
+          <div id="skillbox3">
+            <div id="skilldetaila">
+              <i class="fa-solid fa-sitemap"></i>
+              <span>Django Framework</span>
+            </div>
+            <div class="skillimagea">
+              <img src=" {% static "data/skills/dj.gif" %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section" id="section4"></div>
+
+
+  <section class="contact">
+    <div id="contactbox">
+      <div id="contacttittle">
+        <p>Start a Project</p>
+      </div>
+      <div id="contactmoto">
+        <p>Want to team up !</p>
+        <p>Let's engineer with colaboration.. </p>
+      </div>
+      <div id="contactbutton">
+        <a href="{% url "contactme" %}"><button id="cntctbutton">Contact Me</button></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="footer">
+
+    <div id="footerlogo">
+      <i class="fa-solid fa-code"></i>
+    </div>
+    <div id="footermoto">
+      <p>Dreaming Learning Leveling Up</p>
+      <p>at each step</p>
+    </div>
+    <div id="footericons">
+      <a href="https://github.com/rath-anshuman" class="socialicon"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/anshuman-rath/" class="socialicon"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/anish_anshuman/" class="socialicon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/7683911315" class="socialicon"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:anshumanrath030@gmail.com" class="socialicon"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    <div id="footertittle">
+      <span>handcrafted by anshuman rath</span>
+    </div>
+    <div id="footersubtittle">
+      <span>copyright @ anshumanrath.in</span>
+    </div>
+  </section>
+
+
+  <script src="{% static "" %}">
+
+  </script>
+</body>
+
+</html>
