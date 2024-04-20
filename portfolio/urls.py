@@ -22,9 +22,12 @@ from django.conf.urls.static import static
 
 import  portfolio.views  as mainview 
 
+import contactme.views as cntviews
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', mainview.home,name='home'),
-    path('sayhi', mainview.hipage,name='sayhi'),
-    path('contactme', mainview.contactme,name='contactme'),
+    
+    path('sayhi', cntviews.hipage,name='sayhi'),
+    path('contactme', cntviews.contactme,name='contactme'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

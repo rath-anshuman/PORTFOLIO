@@ -87,11 +87,11 @@
               <p>{{project.description}}</p>
             </div>
             <div id="prjtcode">
-              <a href="{{project.githublink}}"><i class="fa-brands fa-square-github"></i></a>
+              {% comment %} <a href="{{project.githublink}}"><i class="fa-brands fa-square-github"></i></a> {% endcomment %}
               <button class="cssbuttons-io-button">
                 more
                 <div class="icon">
-                  <a href="/html/projects.html"><svg height="24" width="24" viewBox="0 0 24 24">
+                  <a href="{{project.githublink}}"><svg height="24" width="24" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
                       fill="currentColor"></path>

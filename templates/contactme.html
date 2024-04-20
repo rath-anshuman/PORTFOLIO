@@ -26,17 +26,17 @@
         <span>Let's create some magic togeather...</span>
     </div>
     <div id="hiform">
-        <form class="form">
+        <form class="form" method="post" action="{% url "contactme" %}">
+            {% csrf_token %}
             <p class="title">Available </p>
             <label>
-                <input required="" placeholder="Name" type="text" class="input">
-                <!-- <span>Name</span> -->
+                <input required="" placeholder="Name" type="text" class="input" name="name">
             </label>
             <label>
-                <input required="" placeholder="Email" type="email" class="input">
+                <input required="" placeholder="Email" type="email" class="input" name="email">
             </label>
             <label>
-                <select required="" class="input">
+                <select required="" class="input" name="project_type">
                     <option value="" disabled selected>Project Type</option>
                     <option value="web_app">Web App</option>
                     <option value="web_backend">Web Backend</option>
@@ -45,7 +45,7 @@
                 </select>
             </label>
             <label>
-                <textarea required="" placeholder="Message" id="msginput" class="input"></textarea>
+                <textarea required="" placeholder="Message" id="msginput" class="input" name="message"></textarea>
             </label>
             <button class="submit">Submit</button>
         </form>
