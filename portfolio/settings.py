@@ -13,6 +13,13 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+
+import cloudinary
+import cloudinary.api
+import cloudinary.uploader
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -43,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projectpg.apps.ProjectpgConfig',
     'contactme.apps.ContactmeConfig',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -83,14 +91,17 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'verceldb',
-        'USER': 'default',
-        'PASSWORD': '1Sz8UiMCLdqj',
-        'HOST': 'ep-small-bird-a4ovlkqe-pooler.us-east-1.aws.neon.tech',
-        'PORT': '5432',
+        'NAME': 'railway',
+        'USER':'postgres',
+        'PASSWORD':'qjyQwYYXndsZzJFxmFUpuqrZDPBhPPTw',
+        'HOST':'roundhouse.proxy.rlwy.net',
+        'PORT':'20092',
     }
 }
+from django.core.cache import cache
 
+# Clear the entire cache
+cache.clear()
 
 # DATABASES = {
 #     'default': {
@@ -149,3 +160,12 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+          
+cloudinary.config( 
+  cloud_name = "dm3musaev", 
+  api_key = "131885675947142", 
+  api_secret = "Rqx8duoNINh1r1xX0hNo9qRMUHo" 
+  
+)
