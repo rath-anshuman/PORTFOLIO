@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-dqfe01)91wx@6yxh6%i#e4b%!!t$8^+-b(uq0r508mupm(7-#e
 
 
 ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','anshumanrath.in']
-# X_FRAME_OPTIONS = 'ALLOWALL'
+X_FRAME_OPTIONS = 'ALLOWALL'
 
 
 # Application definition
