@@ -96,27 +96,12 @@ DATABASES = {
         'PASSWORD':'rFaih5EKD8Wf',
         'HOST':'ep-calm-shadow-a1p26sgj.ap-southeast-1.aws.neon.tech',
         'PORT':'5432',
-    },
-    # 'railwaydb': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'railway',
-    #     'USER':'postgres',
-    #     'PASSWORD':'qjyQwYYXndsZzJFxmFUpuqrZDPBhPPTw',
-    #     'HOST':'roundhouse.proxy.rlwy.net',
-    #     'PORT':'20092',
-    # },
-    
+    }    
 }
 from django.core.cache import cache
 
 cache.clear()
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation
