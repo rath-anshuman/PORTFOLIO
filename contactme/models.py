@@ -11,7 +11,7 @@ class contact(models.Model):
         ('other', 'Other')
     ])
     message = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True,blank=False,editable=False)
     def __str__(self):
         return self.name
 
@@ -20,6 +20,6 @@ class sayhi(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True,blank=False,editable=False)
     def __str__(self):
         return self.name
