@@ -122,6 +122,20 @@ nav{
   animation: pulse 1s linear infinite;
 }
 
+
+.form  input::placeholder {
+  opacity: 0.5;
+}
+
+.form .input:focus {
+  outline: none;
+  border-color: #1c82ff;
+}
+
+.form textarea:focus {
+  outline: none;
+  border-color: #1c82ff;
+}
 .form label {
   position: relative;
 }

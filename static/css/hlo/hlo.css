@@ -158,12 +158,12 @@ nav{
   
   .form-container .form-group input:focus {
     outline: none;
-    border-color: #e81cff;
+    border-color: #1c82ff;
   }
   
   .form-container .form-group textarea:focus {
     outline: none;
-    border-color: #e81cff;
+    border-color: #1c82ff;
   }
   
   .form-container .form-submit-btn {
