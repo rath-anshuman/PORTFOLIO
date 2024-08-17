@@ -172,7 +172,7 @@ cloudinary.config(
 
 PWA_APP_NAME = 'Anshuman Rath'
 PWA_APP_DESCRIPTION = "http://anshumanrath.in/"
-PWA_APP_THEME_COLOR = '#c4beff'
+PWA_APP_THEME_COLOR = '#695de8'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
 PWA_APP_DISPLAY = 'standalone'
 PWA_APP_SCOPE = '/'
