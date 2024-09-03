@@ -6,6 +6,10 @@ class contact(models.Model):
     email = models.EmailField()
     project_type = models.CharField(max_length=50, choices=[
         ('web_app', 'Web App'),
+        ('full_stack_app', 'Full Stack App'),
+        ('android_app', 'Android App'),
+        ('ios_app', 'Ios App'),
+        ('rest_api', 'REST API'),
         ('web_backend', 'Web Backend'),
         ('core_python', 'Core Python'),
         ('other', 'Other')
